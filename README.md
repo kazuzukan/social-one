@@ -23,4 +23,4 @@ $ npm start
 ```
 
 ## API
-Apache Jena Fuseki BASE URI http://127.0.0.1/3030
+Apache Jena Fuseki BASE URI http://127.0.0.1:3030/
