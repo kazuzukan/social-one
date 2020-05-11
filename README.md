@@ -3,6 +3,7 @@ Social One is a web semantic that provide reliable information about social medi
 
 ## Development Progress
 - [x] Build Apache Jena Fuseki Server
+- [x] Desain Mockup for Website
 
 ## Getting Started
 ### Installation
