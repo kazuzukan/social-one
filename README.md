@@ -2,7 +2,7 @@
 Social One is a web semantic that provide reliable information about social media from many people to connecting each other. This website provides features for searching social media accounts using the SPARQL implementation
 
 ## Development Progress
-- [x] Build Apache Fuseki Server
+- [x] Build Apache Jena Fuseki Server
 
 ## Getting Started
 ### Installation
@@ -23,4 +23,4 @@ $ npm start
 ```
 
 ## API
-BASE URI http://127.0.0.1/3030
+Apache Jena Fuseki BASE URI http://127.0.0.1/3030
