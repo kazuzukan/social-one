@@ -5,8 +5,8 @@ Social One is a web semantic that provide reliable information about social medi
 - [x] Build Apache Jena Fuseki Server
 - [x] Desain Mockup for Website
 
-## Getting Started
-### Installation
+## Installation
+### Node.Js
 1. Download Node.js installer
 2. Install Node.js and NPM (see.. https://nodejs.org/en/docs/)
 3. Install - Use XAMPP
@@ -22,6 +22,12 @@ $ npm start
 ```json
 {"Hello":"Welcome to Social-One"}
 ```
+
+### Apache Jena Fuseki
+1. Download Apache Jena Fuseki in https://jena.apache.org/download/
+2. Install to your directory.
+3. run fuseki-server.bat
+4. Go to your browser, input http://127.0.0.1:3030/
 
 ## API
 Apache Jena Fuseki BASE URI http://127.0.0.1:3030/
