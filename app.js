@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const cors = require('cors')
+const cors = require('cors')
 const app = express();
 
 const port = process.env.PORT || 3000;
@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 //     origin: "http://localhost:3000"
 // };
 
-// app.use(cors());
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
