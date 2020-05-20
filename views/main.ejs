@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('components/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('components/header.ejs') %>
+    </header>
+
+    <div class="container-fluid bg-3 text-center">
+      <section>
+        <div class="search-container">
+          <div class="row">
+            <div class="col-md-12 subtitle">
+              <h2> <b>Sync all of your social media here</b> </h2>
+            </div>
+          </div>
+          <div class="container-searchbar">
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-4">
+                <form>
+                  <input type="text" name="search" placeholder="search name or social media name">
+                </form>
+              </div>
+              <div class="col-md-1">
+                <div class="select-style">
+                  <select>
+                    <option value="volvo">Instagram</option>
+                    <option value="saab">Facebook</option>
+                    <option value="mercedes">Twitter</option>
+                    <option value="audi">LinkedIn</option>
+                  </select>
+                </div>
+               </div>
+              <div class="col-md-1"> 
+                <button type="submit"> Search </button>
+              </div>
+            </div>
+          </div>
+       </div>
+      </section>
+     
+      <br />
+     <div class="container">
+      <div class="row"> 
+        <% users.forEach( user => { %>
+        <div class="col-sm-4">
+            <%- include('components/card.ejs', user) %>
+        </div>
+        <% }) %>
+        <!-- <div class="col-sm-4">
+          <% users.forEach( user => { %>
+            <%- include('components/card.ejs', user) %>
+        <% }) %>
+        </div>
+        <div class="col-sm-4">
+          <% users.forEach( user => { %>
+            <%- include('components/card.ejs', user ) %>
+        <% }) %>
+        </div> -->
+      </div>
+      </div>
+     </div>
+    </div>
+    <%- include('components/footer.ejs') %>
+  </body>
+  
+</html>
