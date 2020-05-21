@@ -1,28 +1,29 @@
 <div class="container-card">
-    <h2> <%= name %> </h2>
+ <h2> <%= name.value %> </h2>
     <div class="detail-title">
       <p> Nickname </p>
-      <span> <%= nickname %> </span>
+      <span> <%= nickname.value %> </span>
     </div>
-    
     <br>
+
     <div class="detail-title">
       <p> Instagram : </p>
-      <a href="https://instagram.com/<%= instagram %>"> @<%= instagram %></a>
+      <a href="https://instagram.com/<%= instagram %>"> @<%= instagram.value %></a>
     </div>
     
     <div class="detail-title">
       <p> Twitter : </p>
-      <a href="https://twitter.com/<%= twitter %>"> @<%= twitter %> </a>
+      <a href="https://twitter.com/<%= twitter %>"> @<%= twitter.value %> </a>
     </div>
     
     <div class="detail-title">
       <p> Facebook : </p>
-      <a href="https://facebook.com/<%= facebook %>"> <%= facebook %> </a>
+      <a href="https://facebook.com/<%= facebook %>"> <%= facebook.value %> </a>
     </div>
 
     <div class="detail-title">
       <p> LinkedIn : </p>
-      <a href="#"> <%= linkedIn %> </a>
-    </div>
+      <a href="#"> <%= linkedIn.value %> </a>
+    </div> 
+    <br>
  </div>

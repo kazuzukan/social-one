@@ -18,11 +18,10 @@
           </div>
           <div class="container-searchbar">
             <div class="row">
+              <form method="POST" action="/search">
               <div class="col-md-3"></div>
               <div class="col-md-4">
-                <form>
                   <input type="text" name="search" placeholder="search name or social media name">
-                </form>
               </div>
               <div class="col-md-1">
                 <div class="select-style">
@@ -37,6 +36,7 @@
               <div class="col-md-1"> 
                 <button type="submit"> Search </button>
               </div>
+            </form>
             </div>
           </div>
        </div>
@@ -45,21 +45,11 @@
       <br />
      <div class="container">
       <div class="row"> 
-        <% users.forEach( user => { %>
+        <% values.forEach( value => { %>
         <div class="col-sm-4">
-            <%- include('components/card.ejs', user) %>
+            <%- include('components/card.ejs', value) %>
         </div>
         <% }) %>
-        <!-- <div class="col-sm-4">
-          <% users.forEach( user => { %>
-            <%- include('components/card.ejs', user) %>
-        <% }) %>
-        </div>
-        <div class="col-sm-4">
-          <% users.forEach( user => { %>
-            <%- include('components/card.ejs', user ) %>
-        <% }) %>
-        </div> -->
       </div>
       </div>
      </div>
