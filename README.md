@@ -4,9 +4,11 @@ Social One is a web semantic that provide reliable information about social medi
 ## Development Progress
 - [x] Build Apache Jena Fuseki Server
 - [x] Desain Mockup for Website
-- [x] User Inteface 80%
+- [x] User Inteface
 - [x] Route to Not found Page if result not found
-- [x] Dummy data for passing to User Interface
+- [x] Dummy dataset (user.ttl)
+- [x] Query Select all data for landing page
+- [x] Query for Search name 
 
 ## Installation
 ### Node.Js
