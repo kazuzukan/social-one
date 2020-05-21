@@ -4,9 +4,11 @@ Social One is a web semantic that provide reliable information about social medi
 ## Development Progress
 - [x] Build Apache Jena Fuseki Server
 - [x] Desain Mockup for Website
-- [x] User Inteface 80%
+- [x] User Inteface
 - [x] Route to Not found Page if result not found
-- [x] Dummy data for passing to User Interface
+- [x] Dummy dataset (user.ttl)
+- [x] Query Select all data for landing page
+- [x] Query for Search name 
 
 ## Installation
 ### Node.Js
@@ -29,5 +31,25 @@ $ npm start
 3. run fuseki-server.bat
 4. Go to your browser, input http://127.0.0.1:3030/
 
+
+## How To Use
+### Upload Dataset
+1. Go to http://127.0.0.1:3030/ after Apache Fuseki jena started
+2. klik manage dataset, and make new one. 
+3. Upload data from dataset folder
+
+```bash
+user.ttl
+```
+4. Wait until upload data success.
+
+### Search user data 
+1. After run npm start, go to your browser, input http://127.0.0.1:3000/
+2. Search name in search bar (ex: Risyad with Uppercase)
+
 ## API
-Apache Jena Fuseki BASE URI http://127.0.0.1:3030/
+Apache Jena Fuseki URL: http://127.0.0.1:3030/
+### API for query
+```bash
+${URL}/socialone/query
+```
