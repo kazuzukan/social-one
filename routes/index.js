@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const users = require('../model/data')
 const search = require('../controller/userController');
 
 //Default
