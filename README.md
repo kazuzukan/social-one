@@ -4,6 +4,9 @@ Social One is a web semantic that provide reliable information about social medi
 ## Development Progress
 - [x] Build Apache Jena Fuseki Server
 - [x] Desain Mockup for Website
+- [x] User Inteface 80%
+- [x] Route to Not found Page if result not found
+- [x] Dummy data for passing to User Interface
 
 ## Installation
 ### Node.Js
@@ -18,10 +21,7 @@ Social One is a web semantic that provide reliable information about social medi
 $ npm start
 ```
 10. Go to your browser, input http://127.0.0.1:3000/
-11. If you see that, then pinjemin server is already running
-```json
-{"Hello":"Welcome to Social-One"}
-```
+11. You will see main page Social-One
 
 ### Apache Jena Fuseki
 1. Download Apache Jena Fuseki in https://jena.apache.org/download/
