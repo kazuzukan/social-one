@@ -2,13 +2,14 @@
 Social One is a web semantic that provide reliable information about social media from many people to connecting each other. This website provides features for searching social media accounts using the SPARQL implementation
 
 ## Development Progress
-- [x] Build Apache Jena Fuseki Server
-- [x] Desain Mockup for Website
-- [x] User Inteface
-- [x] Route to Not found Page if result not found
-- [x] Dummy dataset (user.ttl)
-- [x] Query Select all data for landing page
-- [x] Query for Search name 
+- [x] Build Apache Jena Fuseki Server.
+- [x] Desain Mockup for Website.
+- [x] User Inteface.
+- [x] Route to Not found Page if result not found.
+- [x] Dataset (user.ttl).
+- [x] Query Select all data for landing page.
+- [x] Query for Search name, instagram, twitter, facebook, and linkedIn.
+- [x] About us page.
 
 ## Installation
 ### Node.Js
@@ -45,7 +46,7 @@ user.ttl
 
 ### Search user data 
 1. After run npm start, go to your browser, input http://127.0.0.1:3000/
-2. Search name in search bar (ex: Risyad with Uppercase)
+2. Search name, instagram, twitter, facebook, and linkedIn in search bar (ex: Risyad with Uppercase)
 
 ## API
 Apache Jena Fuseki URL: http://127.0.0.1:3030/
