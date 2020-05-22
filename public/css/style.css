@@ -48,6 +48,10 @@ a, span {
   color: #000000 !important;
 }
 
+.navbar-collapse {
+  font-size: 18px;
+}
+
 /* search container */
 .subtitle{
     margin-bottom: 20px;
@@ -126,6 +130,31 @@ button {
 
 .detail-title p {
   color: #00ADB5;
+}
+
+/* about page */
+.about-container{
+  font-size: 18px;
+  text-align: justify;
+  background-color: #393E46;
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+
+.team-desc {
+  padding-top: 50px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.team-desc p {
+  padding-top: 10px;
+  color: #00ADB5;
+}
+
+.team-desc .job-desc p{
+  color: #000000;
 }
 
 /* footer */
