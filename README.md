@@ -15,16 +15,14 @@ Social One is a web semantic that provide reliable information about social medi
 ### Node.Js
 1. Download Node.js installer
 2. Install Node.js and NPM (see.. https://nodejs.org/en/docs/)
-3. Install - Use XAMPP
-4. Start Apache and Mysql service on your xampp control panel
-5. Clone https://github.com/kazuzukan/social-one.git into your directory
-6. Run NPM start on your terminal
+3. Clone https://github.com/kazuzukan/social-one.git into your directory
+4. Run NPM start on your terminal
 
 ```bash
 $ npm start
 ```
-10. Go to your browser, input http://127.0.0.1:3000/
-11. You will see main page Social-One
+5. Go to your browser, input http://127.0.0.1:3000/
+6. You will see main page Social-One
 
 ### Apache Jena Fuseki
 1. Download Apache Jena Fuseki in https://jena.apache.org/download/
