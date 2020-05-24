@@ -12,26 +12,12 @@ Social One is a web semantic that provide reliable information about social medi
 - [x] About us page.
 
 ## Installation
-### Node.Js
-1. Download Node.js installer
-2. Install Node.js and NPM (see.. https://nodejs.org/en/docs/)
-3. Clone https://github.com/kazuzukan/social-one.git into your directory
-4. Run NPM start on your terminal
-
-```bash
-$ npm start
-```
-5. Go to your browser, input http://127.0.0.1:3000/
-6. You will see main page Social-One
-
 ### Apache Jena Fuseki
 1. Download Apache Jena Fuseki in https://jena.apache.org/download/
 2. Install to your directory.
 3. run fuseki-server.bat
 4. Go to your browser, input http://127.0.0.1:3030/
 
-
-## How To Use
 ### Upload Dataset
 1. Go to http://127.0.0.1:3030/ after Apache Fuseki jena started
 2. klik manage dataset, and make new one. 
@@ -45,6 +31,22 @@ social-one/dataset/user.ttl
 ```
 4. Wait until upload data success.
 
+#### Dataset Schema
+![alt text](https://github.com/kazuzukan/social-one/blob/master/dataset/social-one_graph_ttl.png?raw=true "Dataset Schema") 
+
+### Node.Js
+1. Download Node.js installer
+2. Install Node.js and NPM (see.. https://nodejs.org/en/docs/)
+3. Clone https://github.com/kazuzukan/social-one.git into your directory
+4. Run NPM start on your terminal
+
+```bash
+$ npm start
+```
+5. Go to your browser, input http://127.0.0.1:3000/
+6. You will see main page Social-One
+
+## How To Use
 ### Search user data 
 1. After run npm start, go to your browser, input http://127.0.0.1:3000/
 2. Search name, instagram, twitter, facebook, and linkedIn in search bar (ex: Risyad with Uppercase)
