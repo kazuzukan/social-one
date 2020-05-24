@@ -23,7 +23,7 @@ Social One is a web semantic that provide reliable information about social medi
 2. klik manage dataset, and make new one. 
 3. Enter Dataset name = socialone
 4. Choose Dataset type = Persistent
-5. Crate datase
+5. Create dataset
 6. Upload data from dataset folder, select files user
 
 ```bash
