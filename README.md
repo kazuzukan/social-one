@@ -35,10 +35,13 @@ $ npm start
 ### Upload Dataset
 1. Go to http://127.0.0.1:3030/ after Apache Fuseki jena started
 2. klik manage dataset, and make new one. 
-3. Upload data from dataset folder
+3. Enter Dataset name = socialone
+4. Choose Dataset type = Persistent
+5. Crate datase
+6. Upload data from dataset folder, select files user
 
 ```bash
-user.ttl
+social-one/dataset/user.ttl
 ```
 4. Wait until upload data success.
 
