@@ -53,6 +53,28 @@
         <% }) %>
       </div>
       </div>
+
+      <div class="container">
+        <div class="row">
+            <% if(option != "Name") {%>
+            <h2> Connected <%- option %> users </h2>
+            <br>
+            <br>    
+             <div class="row"> 
+               <% if(followed.length != 0) { %>
+                <% followed.forEach( value => { %>
+                    <div class="col-sm-4">
+                      <%- include('components/followedcard.ejs', value) %>
+                    </div>
+                <% }) %>
+                <% } else { %>
+                  <p> There is not found connected user </p>
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+
+      </div>
      </div>
     </div>
     <%- include('components/footer.ejs') %>

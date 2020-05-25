@@ -40,7 +40,6 @@ exports.getUsers = async (name) => {
   }
 };
 
-
 exports.getInstagram = async (name) => {
   //SPARQL Query
   const querydata = {
@@ -134,7 +133,6 @@ exports.getTwitter = async (name) => {
   }
 };
 
-
 exports.getLinkedin = async (name) => {
   //SPARQL Query
   const querydata = {
@@ -166,7 +164,8 @@ exports.getLinkedin = async (name) => {
   }
 };
 
-exports.defaultUser = async (name) => {
+// get All user
+exports.defaultUser = async () => {
   //SPARQL Query
   const querydata = {
     query: `
@@ -180,7 +179,7 @@ exports.defaultUser = async (name) => {
   	?user user:facebook ?facebook.
   	?user user:linkedIn ?linkedIn;
 }
-    `
+    `,
   };
 
   try {

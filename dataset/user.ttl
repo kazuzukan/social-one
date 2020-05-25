@@ -11,23 +11,12 @@ d:f0301 user:name "Risyad Pangestu";
 d:f0302 user:name "Dimas Satria";
         user:nickname "Tole";
         user:instagram "24Dim";
-<<<<<<< HEAD
-        user:twitter "risyaddp";
-        user:facebook "Dimas satia";
-=======
         user:twitter "24dimdim";
         user:facebook "irdimz";
->>>>>>> 7d274435fb4bd8437ab2340463a48c87ab527afc
         user:linkedIn "Dimas Satria".
 
 d:f0303 user:name "M Luthfiansyah";
         user:nickname "Hyiung";
-<<<<<<< HEAD
-        user:instagram "luthfiasyah";
-        user:twitter "risyaddp";
-        user:facebook "Luthfianstyah";
-        user:linkedIn "Muhammad Luthfiansyah".
-=======
         user:instagram "luthfiansyh";
         user:twitter "luthfiansyh";
         user:facebook "M Luthfiansyah";
@@ -39,7 +28,6 @@ d:f0304 user:name "Imron Madani";
         user:twitter "danimron";
         user:facebook "ImronMadani";
         user:linkedIn "Imron Madani".
->>>>>>> 7d274435fb4bd8437ab2340463a48c87ab527afc
 
 d:f0201 user:name "Anglelica Rapunzela";
         user:nickname "Rapunzel";
@@ -47,3 +35,32 @@ d:f0201 user:name "Anglelica Rapunzela";
         user:twitter "risyaddp";
         user:facebook "Angle";
         user:linkedIn "Rapunzela Angelica".
+
+# Users Instagram connection
+d:f0201 user:instagramfollow d:f0301.
+d:f0201 user:instagramfollow d:f0302.
+d:f0301 user:instagramfollow d:f0304.
+d:f0302 user:instagramfollow d:f0201.
+
+#Users twitter connection 
+d:f0303 user:twitterfollow d:f0304.
+d:f0303 user:twitterfollow d:f0301.
+d:f0301 user:twitterfollow d:f0304.
+d:f0201 user:twitterfollow d:f0302.
+
+#User facebook connection
+d:f0302 user:facebookfollow d:f0201.
+d:f0304 user:facebookfollow d:f0303.
+d:f0201 user:facebookfollow d:f0303.
+
+#user LinkedIn connection
+d:f0301 user:linkedinfollow d:f0302.
+d:f0301 user:linkedinfollow d:f0304.
+d:f0302 user:linkedinfollow d:f0201.
+d:f0302 user:linkedinfollow d:f0304.
+d:f0201 user:linkedinfollow d:f0303.
+d:f0303 user:linkedinfollow d:f0304.
+d:f0301 user:linkedinfollow d:f0302.
+d:f0304 user:linkedinfollow d:f0301.
+
+
