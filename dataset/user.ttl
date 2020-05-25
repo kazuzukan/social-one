@@ -11,16 +11,35 @@ d:f0301 user:name "Risyad Pangestu";
 d:f0302 user:name "Dimas Satria";
         user:nickname "Tole";
         user:instagram "24Dim";
+<<<<<<< HEAD
         user:twitter "risyaddp";
         user:facebook "Dimas satia";
+=======
+        user:twitter "24dimdim";
+        user:facebook "irdimz";
+>>>>>>> 7d274435fb4bd8437ab2340463a48c87ab527afc
         user:linkedIn "Dimas Satria".
 
 d:f0303 user:name "M Luthfiansyah";
         user:nickname "Hyiung";
+<<<<<<< HEAD
         user:instagram "luthfiasyah";
         user:twitter "risyaddp";
         user:facebook "Luthfianstyah";
         user:linkedIn "Muhammad Luthfiansyah".
+=======
+        user:instagram "luthfiansyh";
+        user:twitter "luthfiansyh";
+        user:facebook "M Luthfiansyah";
+        user:linkedIn "Muhammad Luthfiansyah".
+
+d:f0304 user:name "Imron Madani";
+        user:nickname "Dani";
+        user:instagram "danimron";
+        user:twitter "danimron";
+        user:facebook "ImronMadani";
+        user:linkedIn "Imron Madani".
+>>>>>>> 7d274435fb4bd8437ab2340463a48c87ab527afc
 
 d:f0201 user:name "Anglelica Rapunzela";
         user:nickname "Rapunzel";
