@@ -9,6 +9,7 @@ Social One is a web semantic that provide reliable information about social medi
 - [x] Dataset (user.ttl).
 - [x] Query Select all data for landing page.
 - [x] Query for Search name, instagram, twitter, facebook, and linkedIn.
+- [x] Connected user Query for Search name, instagram, twitter, facebook, and linkedIn.
 - [x] About us page.
 
 ## Installation
