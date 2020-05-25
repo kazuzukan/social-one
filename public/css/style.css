@@ -71,7 +71,7 @@ a, span {
 
 input[type=text]{
     color: black;
-    padding-left: 30px;
+    padding-left: 40px;
     width: 100%;
     height: 35px;
     border-radius: 13px;
@@ -108,6 +108,12 @@ button {
   outline: none;
 }
 
+.icon-search input[type='text']{
+  background-image: url(/assets/search.png);
+  background-size: 15px;
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+}
 
 .not-found{
   padding-top: 150px;

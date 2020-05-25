@@ -12,19 +12,19 @@ d:f0302 user:name "Dimas Satria";
         user:nickname "Tole";
         user:instagram "24Dim";
         user:twitter "risyaddp";
-        user:facebook "Risyad Pangeran";
+        user:facebook "Dimas satia";
         user:linkedIn "Dimas Satria".
 
 d:f0303 user:name "M Luthfiansyah";
         user:nickname "Hyiung";
         user:instagram "luthfiasyah";
         user:twitter "risyaddp";
-        user:facebook "Risyad Pangeran";
-        user:linkedIn "Risyad Pangestu".
+        user:facebook "Luthfianstyah";
+        user:linkedIn "Muhammad Luthfiansyah".
 
 d:f0201 user:name "Anglelica Rapunzela";
         user:nickname "Rapunzel";
         user:instagram "risyadpangestuu";
         user:twitter "risyaddp";
-        user:facebook "Risyad Pangeran";
-        user:linkedIn "Risyad Pangestu".
+        user:facebook "Angle";
+        user:linkedIn "Rapunzela Angelica".
