@@ -4,7 +4,7 @@ Social One is a web semantic that provide reliable information about social medi
 ## Development Progress
 - [x] Build Apache Jena Fuseki Server.
 - [x] Desain Mockup for Website.
-- [x] User Inteface.
+- [x] User Interface.
 - [x] Route to Not found Page if result not found.
 - [x] Dataset (user.ttl).
 - [x] Query Select all data for landing page.
@@ -20,7 +20,7 @@ Social One is a web semantic that provide reliable information about social medi
 
 ### Upload Dataset
 1. Go to http://127.0.0.1:3030/ after Apache Fuseki jena started
-2. klik manage dataset, and make new one. 
+2. klik manage dataset, and make a new one. 
 3. Enter Dataset name = socialone
 4. Choose Dataset type = Persistent
 5. Create dataset
@@ -29,7 +29,7 @@ Social One is a web semantic that provide reliable information about social medi
 ```bash
 social-one/dataset/user.ttl
 ```
-4. Wait until upload data success.
+7. Wait until upload data success
 
 #### Dataset Schema
 ![alt text](https://github.com/kazuzukan/social-one/blob/master/dataset/social-one_graph_ttl.png?raw=true "Dataset Schema") 
