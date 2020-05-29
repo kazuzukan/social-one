@@ -5,7 +5,7 @@ const URL = "http://127.0.0.1:3030";
 
 // headers for the HTTP request
 const headers = {
-  Accept: "application/sparql-results+json,*/*;q=0.9",
+  "Accept": "application/sparql-results+json,*/*;q=0.9",
   "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
 };
 
