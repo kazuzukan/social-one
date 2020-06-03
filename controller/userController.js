@@ -7,6 +7,7 @@ exports.searcUser = async (req, res) => {
   const value = [];
   const followed = [];
   const option = req.body.option;
+  console.log(option)
   const name = req.body.search;
   console.log(name);
   if (option == "Name" && name) {
@@ -37,20 +38,17 @@ exports.searcUser = async (req, res) => {
   if (searchValues.length == 0) {
     res.render("notFound");
   } else {
-    res.render("search", {
+    return res.status(200).render("search", {
       values: searchValues,
       option: option,
       followed: followedValues,
     });
-    console.log(followedValues);
-    console.log(option);
   }
 };
 
 exports.defaultUser = async (req, res) => {
   const values = [];
-  await dataset
-    .defaultUser()
+  await dataset.defaultUser()
     .then((value) => {
       values.push(...value.results.bindings);
       console.log(values);
@@ -61,5 +59,6 @@ exports.defaultUser = async (req, res) => {
         message: err.message || "Some error occurred while retrieving Users.",
       });
     });
-  res.render("main", { values: values });
+  res.status(200).render("main", { values: values });
+  // res.status(200).json(values);
 };
