@@ -8,13 +8,13 @@ exports.searcUser = async (req, res) => {
   const followed = [];
   const option = req.body.option;
   console.log(option)
-  const name = req.body.search;
-  console.log(name);
-  if (option == "Name" && name) {
-    const value = await dataset.getUsers(name);
+  const search = req.body.search;
+  console.log(search);
+  if (option == "name" && search) {
+    const value = await dataset.getUsers(search, option);
     searchValues.push(...value.results.bindings);
-  } else if (option == "Instagram" && name) {
-    const value = await dataset.getInstagram(name);
+  } else if (option == "Instagram" && search) {
+    const value = await dataset.getUsers(search, option);
     const followed = await connection.instagramFollow(name);
     searchValues.push(...value.results.bindings);
     followedValues.push(...followed.results.bindings);

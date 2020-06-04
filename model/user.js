@@ -9,7 +9,7 @@ const headers = {
   "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
 };
 
-exports.getUsers = async (name) => {
+exports.getUsers = async (name, option) => {
   //SPARQL Query
   const querydata = {
     query: `
@@ -22,7 +22,7 @@ exports.getUsers = async (name) => {
             ?user user:twitter ?twitter.
   	        ?user user:facebook ?facebook.
   	        ?user user:linkedIn ?linkedIn;
-            FILTER contains(?name,"${name}")
+            FILTER contains(?${option},"${name}")
         }
         `,
   };
