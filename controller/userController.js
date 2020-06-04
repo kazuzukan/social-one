@@ -4,36 +4,23 @@ const connection = require("../model/userconnection");
 exports.searcUser = async (req, res) => {
   const searchValues = [];
   const followedValues = [];
-  const value = [];
-  const followed = [];
   const option = req.body.option;
-  console.log(option)
   const search = req.body.search;
-  console.log(search);
+  console.log(option);
   if (option == "name" && search) {
     const value = await dataset.getUsers(search, option);
-    searchValues.push(...value.results.bindings);
-  } else if (option == "Instagram" && search) {
+    if (value){
+      searchValues.push(...value.results.bindings);
+    }
+  } else if (search){
     const value = await dataset.getUsers(search, option);
-    const followed = await connection.instagramFollow(name);
-    searchValues.push(...value.results.bindings);
-    followedValues.push(...followed.results.bindings);
-  } else if (option == "Facebook" && name) {
-    const value = await dataset.getFacebook(name);
-    const followed = await connection.facebookFollow(name);
-    searchValues.push(...value.results.bindings);
-    followedValues.push(...followed.results.bindings);
-  } else if (option == "Twitter" && name) {
-    const value = await dataset.getTwitter(name);
-    const followed = await connection.twitterFollow(name);
-    searchValues.push(...value.results.bindings);
-    followedValues.push(...followed.results.bindings);
-  } else if (option == "LinkedIn" && name) {
-    const value = await dataset.getLinkedin(name);
-    const followed = await connection.linkedInFollow(name);
-    searchValues.push(...value.results.bindings);
-    followedValues.push(...followed.results.bindings);
-  }
+    const followed = await connection.connectedUser(search, option);
+    if(value && followedValues){
+      searchValues.push(...value.results.bindings);
+      followedValues.push(...followed.results.bindings);
+      console.log(followedValues);
+    }
+  } 
 
   if (searchValues.length == 0) {
     res.render("notFound");
@@ -50,9 +37,9 @@ exports.defaultUser = async (req, res) => {
   const values = [];
   await dataset.defaultUser()
     .then((value) => {
-      values.push(...value.results.bindings);
-      console.log(values);
-      console.log(values.length);
+      if(value){
+        values.push(...value.results.bindings);
+      }
     })
     .catch((err) => {
       res.status(404).send({
