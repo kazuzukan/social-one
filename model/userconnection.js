@@ -25,7 +25,7 @@ exports.connectedUser = async (name, option) => {
           ?userfollow user:instagram ?followinstagram.
           ?userfollow user:twitter ?followtwitter.
           ?userfollow user:facebook ?followfacebook.
-          ?userfollow user:linkedIn ?followlinkedin.
+          ?userfollow user:linkedin ?followlinkedin.
           FILTER contains(?${option},"${name}")
   }
       `,
