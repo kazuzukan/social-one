@@ -36,11 +36,16 @@ d:f0201 user:name "Anglelica Rapunzela";
         user:facebook "Angle";
         user:linkedin "Rapunzela Angelica".
 
+d:f0202 user:name "Bapak Aditya";
+        user:instagram "AdityaPradana";.
+
 # Users Instagram connection
 d:f0201 user:instagramfollow d:f0301.
 d:f0201 user:instagramfollow d:f0302.
 d:f0301 user:instagramfollow d:f0304.
 d:f0302 user:instagramfollow d:f0201.
+
+d:f0202 user:instagramfollow d:f0301.
 
 #Users twitter connection 
 d:f0303 user:twitterfollow d:f0304.
