@@ -14,14 +14,14 @@ exports.getUsers = async (name, option) => {
   const querydata = {
     query: `
         PREFIX user:<http://example.co.id/ns/userdata>
-        SELECT ?name ?instagram ?twitter ?facebook ?linkedIn ?nickname
+        SELECT ?name ?instagram ?twitter ?facebook ?linkedin ?nickname
         WHERE {
             ?user user:name ?name.
    	        ?user user:nickname ?nickname.
             ?user user:instagram ?instagram.
             ?user user:twitter ?twitter.
   	        ?user user:facebook ?facebook.
-  	        ?user user:linkedIn ?linkedIn;
+  	        ?user user:linkedin ?linkedin;
             FILTER contains(?${option},"${name}")
         }
         `,
@@ -46,14 +46,14 @@ exports.defaultUser = async () => {
   const querydata = {
     query: `
     PREFIX user:<http://example.co.id/ns/userdata>
-    SELECT ?name ?instagram ?twitter ?facebook ?linkedIn ?nickname
+    SELECT ?name ?instagram ?twitter ?facebook ?linkedin ?nickname
     WHERE {
     ?user user:name ?name.
    	?user user:nickname ?nickname.
     ?user user:instagram ?instagram.
     ?user user:twitter ?twitter.
   	?user user:facebook ?facebook.
-  	?user user:linkedIn ?linkedIn;
+  	?user user:linkedin ?linkedin;
 }
     `,
   };

@@ -1,7 +1,7 @@
 const axios = require("axios");
 const qs = require("qs");
 
-const URL = "https://qrary-fuseki-service.herokuapp.com";
+const URL = "http://localhost:3030";
 
 // headers for the HTTP request
 const headers = {
@@ -25,7 +25,7 @@ exports.connectedUser = async (name, option) => {
           ?userfollow user:instagram ?followinstagram.
           ?userfollow user:twitter ?followtwitter.
           ?userfollow user:facebook ?followfacebook.
-          ?userfollow user:linkedIn ?followlinkedin.
+          ?userfollow user:linkedin ?followlinkedin.
           FILTER contains(?${option},"${name}")
   }
       `,
