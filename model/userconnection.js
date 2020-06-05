@@ -1,7 +1,7 @@
 const axios = require("axios");
 const qs = require("qs");
 
-const URL = "http://localhost:3030";
+const URL = "https://qrary-fuseki-service.herokuapp.com";
 
 // headers for the HTTP request
 const headers = {
