@@ -34,6 +34,8 @@ social-one/dataset/user.ttl
 
 #### Dataset Schema
 ![alt text](https://github.com/kazuzukan/social-one/blob/master/dataset/social-one_graph_ttl.png?raw=true "Dataset Schema") 
+##user connection
+![alt text](https://github.com/kazuzukan/social-one/blob/master/dataset/social-one_graph_ttl-Page-2.png?raw=true "Connection Schema") 
 
 ### Node.Js
 1. Download Node.js installer
