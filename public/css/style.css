@@ -85,6 +85,8 @@ button {
   border-radius: 13px;
 }
 
+
+
 .select-style {
   padding-left: 6px;
   padding-top: 1px;
@@ -93,6 +95,7 @@ button {
   border-radius: 13px;
   overflow: hidden;
   background-color: #00ADB5;
+  position:relative;
 }
 
 .select-style select {
@@ -102,10 +105,14 @@ button {
   box-shadow: none;
   background-color: #00ADB5;
   -webkit-appearance: none;
-}
 
+}
+option{
+  background-color:#00ACC9;
+  text-align:center;
+}
 .select-style select:focus {
-  outline: none;
+  outline: white;
 }
 
 .icon-search input[type='text']{
