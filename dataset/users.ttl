@@ -1,0 +1,172 @@
+@prefix user:<http://example.co.id/ns/userdata> .
+@prefix d:<http://example.co.id/ns/data#> .
+
+d:f0301 user:name "Risyad Pangestu";
+        user:nickname "Risyad";
+        user:instagram "risyadpangestuu";
+        user:twitter "risyaddp";
+        user:facebook "Risyad Pangeran";
+        user:linkedin "RisyadPangestu".
+
+d:f0302 user:name "Dimas Satria";
+        user:nickname "Tole";
+        user:instagram "24Dim";
+        user:twitter "24dimdim";
+        user:facebook "irdimz";
+        user:linkedin "DimasSatria".
+
+d:f0303 user:name "M Luthfiansyah";
+        user:nickname "Hyiung";
+        user:instagram "luthfiansyh";
+        user:twitter "luthfiansyh";
+        user:facebook "M Luthfiansyah";
+        user:linkedin "MuhammadLuthfiansyah".
+
+d:f0304 user:name "Imron Madani";
+        user:nickname "Dani";
+        user:instagram "danimron";
+        user:twitter "danimron";
+        user:facebook "ImronMadani";
+        user:linkedin "ImronMadani".
+
+d:f0201 user:name "Anglelica Rapunzela";
+        user:nickname "Rapunzel";
+        user:instagram "risyadpangestuu";
+        user:twitter "risyaddp";
+        user:facebook "Angle";
+        user:linkedin "RapunzelaAngelica".
+
+d:f0305 user:name "Junia Adhani";
+        user:nickname "Junia";
+        user:instagram "junadhani";
+        user:twitter "JuniaAdhani";
+        user:facebook "Junia Adhani";
+        user:linkedin "JuniaAdhani".
+
+d:f0306 user:name "Benedict Juan Carlo";
+        user:nickname "Bene";
+        user:instagram "Benedict";
+        user:twitter "BenedictJuan";
+        user:facebook "Benedict Juan Carlo";
+        user:linkedin "BenedictJuanCarlo".
+
+d:f0307 user:name "Felia Sri Indriyani";
+        user:nickname "Feli";
+        user:instagram "FeliaSri";
+        user:twitter "FeliaSri";
+        user:facebook "Felia Sri Indriyani";
+        user:linkedin "FeliaSriIndriyani".
+
+d:f0308 user:name "Fadhli Hibatul Haqqi";
+        user:nickname "Toto";
+        user:instagram "FadhliHiabtul";
+        user:twitter "FadhliHiabtul";
+        user:facebook "Fadhli Hiabtul Haqqi";
+        user:linkedin "FadhliHiabtulHaqqi".
+
+
+d:f0309 user:name "Mohamad Achun Armando";
+        user:nickname "Atjoendz";
+        user:instagram "AchunArmando";
+        user:twitter "AchunArmando";
+        user:facebook "Mohamad Achun Armando";
+        user:linkedin "MohamadAchunArmando".
+
+
+d:f0310 user:name "Muhammad Siradj Al Fauzi";
+        user:nickname "Siradj";
+        user:instagram "SiradjAlFauzi";
+        user:twitter "SiradjAlFauzi";
+        user:facebook "MuhammadSiradjAlFauzi";
+        user:linkedin "MuhammadSiradjAlFauzi".
+
+d:f0319 user:name "Muhammad Hafidz Alfarizi";
+        user:nickname "Ewok";
+        user:instagram "HafidzAlfarizi";
+        user:twitter "HafidzAlfarizi";
+        user:facebook "Muhammad Hafidz Alfarizi";
+        user:linkedin "MuhammadHafidzAlfarizi".
+
+d:f0311 user:name "Syaina Nur Fauziyah";
+        user:nickname "Syaina";
+        user:instagram "SyainaNur";
+        user:twitter "SyainaNur";
+        user:facebook "Syaina Nur Fauziyah";
+        user:linkedin "SyainaNurFauziyah".
+
+d:f0312 user:name "Muhammad Fakhri Rahman";
+        user:nickname "Aci";
+        user:instagram "FakhriRahman";
+        user:twitter "FakhriRahman";
+        user:facebook "Muhammad Fakhri Rahman";
+        user:linkedin "MuhammadFakhriRahman".
+
+d:f0313 user:name "Karimah Azzuhdu";
+        user:nickname "Kaka";
+        user:instagram "KarimahAzzuhdu";
+        user:twitter "KarimahAzzuhdu";
+        user:facebook "Karimah Azzuhdu";
+        user:linkedin "KarimahAzzuhduToriqoh".
+
+d:f0314 user:name "Cryssa Piter";
+        user:nickname "Caca";
+        user:instagram "CryssaPiter";
+        user:twitter "CryssaPiter";
+        user:facebook "Cryssa Piter";
+        user:linkedin "CryssaPiter".
+
+d:f0315 user:name "Ardhito Pramono";
+	user:nickname "Ardhto";
+	user:instagram "ardhitopramono";
+	user:twitter "ardhitoprmn";
+	user:facebook "Ardhito";
+	user:linkedin "Ardhito Pramono".
+
+d:f0316 user:name "Bagaskara P";
+	user:nickname "Hindia";
+	user:instagram "wordfangs";
+	user:twitter "wordfangs";
+	user:facebook "Hindia";
+	user:linkedin "Bagaskara P".
+
+d:f0317 user:name "Marion Jola";
+	user:nickname "Marion";
+	user:instagram "lalamarionmj";
+	user:twitter "marionjola";
+	user:facebook "Marion Jola";
+	user:linkedin "Marion Jola".
+
+d:f0318 user:name "Rich Brian";
+	user:nickname "Brian I";
+	user:instagram "brianimanuel";
+	user:twitter "richbrian";
+	user:facebook "Rich Brian";
+	user:linkedin "Brian I".
+
+# Users Instagram connection
+d:f0201 user:instagramfollow d:f0301.
+d:f0201 user:instagramfollow d:f0302.
+d:f0301 user:instagramfollow d:f0304.
+d:f0302 user:instagramfollow d:f0201.
+
+#Users twitter connection 
+d:f0303 user:twitterfollow d:f0304.
+d:f0303 user:twitterfollow d:f0301.
+d:f0301 user:twitterfollow d:f0304.
+d:f0201 user:twitterfollow d:f0302.
+
+#User facebook connection
+d:f0302 user:facebookfollow d:f0201.
+d:f0304 user:facebookfollow d:f0303.
+d:f0201 user:facebookfollow d:f0303.
+
+#user LinkedIn connection
+d:f0301 user:linkedinfollow d:f0302.
+d:f0301 user:linkedinfollow d:f0304.
+d:f0302 user:linkedinfollow d:f0201.
+d:f0302 user:linkedinfollow d:f0304.
+d:f0201 user:linkedinfollow d:f0303.
+d:f0303 user:linkedinfollow d:f0304.
+d:f0304 user:linkedinfollow d:f0301.
+
+
