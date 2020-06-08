@@ -8,6 +8,10 @@ a, span {
   color: black;
 }
 
+.xs-margin {
+  margin-bottom: 100px;
+}
+
 .bg-3 {
   background-color: #ffffff;
   color: #555555;
