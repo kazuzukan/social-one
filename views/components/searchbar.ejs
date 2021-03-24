@@ -4,16 +4,16 @@
         <h2> <b style="font-size: 36px;">Sync all of your social media here</b> </h2>
       </div>
     </div>
-    <div class="container-searchbar">
+    <div class="searchbar-mdlg visible-md visible-lg">
       <div class="row">
         <form method="POST" action="/search">
-          <div class="col-xs-1 col-sm-2 col-md-2"></div>
-          <div class="col-xs-11 col-sm-7 col-md-5 icon-search" style="margin-left:20px;">
+          <div class="col-md-2"></div>
+          <div class="col-md-5 icon search" style="margin-left:20px;">
             <input type="text" name="search" placeholder="search name or social media">
           </div>
-          <div class="col-xs-1 col-sm-3 col-md-4"></div>
-          <div class="col-xs-6 col-sm-3 col-md-1">
-            <div class="select-style" style="margin-left:-10px;">
+          <div class="col-md-4"></div>
+          <div class="col-md-1">
+            <div class="select-style3" style="margin-left:-10px;">
               <select name="option" style="cursor: pointer;">
                 <option value="name">Name</option>
                 <option value="instagram">Instagram</option>
@@ -23,7 +23,61 @@
               </select>
             </div>
           </div>
-          <div class="col-md-1 col-sm-3">
+          <div class="col-md-2 col-lg-1">
+            <button type="submit"> Search </button>
+          </div>
+        </form>
+      </div>  
+    </div>
+    
+
+
+    <div class="container-searchbar visible-xs visible-sm visible">
+      <div class="row">
+        <form method="POST" action="/search">
+          <div class="col-xs-1 col-sm-2"></div>
+          <div class="col-xs-11 col-sm-7 icon-search" style="margin-left:20px;">
+            <input type="text" name="search" placeholder="search name or social media">
+          </div>
+          <div class="select-style2 visible-md" style="margin-left:-100px;">
+            <select name="option" style="cursor: pointer;">
+              <option value="name">Name</option>
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="twitter">Twitter</option>
+              <option value="linkedin">LinkedIn</option>
+            </select>
+          </div>
+          <div class="visible-md" style="margin-right:100px;">
+            <button type="submit"> Search </button>
+          </div>
+          <div class="col-xs-1 col-sm-3"></div>
+          <div class="margin-for-xs visible-xs"></div>
+          <div class="margin-for-sm visible-sm"></div>
+          <div class="col-xs-12 col-sm-3">
+            <div class="select-style visible-sm">
+              <select name="option" style="cursor: pointer;">
+                <option value="name">Name</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+              </select>
+            </div>
+            <div class="select-style1 visible-xs">
+              <select name="option" style="cursor: pointer;">
+                <option value="name">Name</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+              </select>
+          </div>
+          <div class="visible-xs visible-sm margin-for-btn"></div>
+          <div class=" col-sm-3 visible-xs">
+            <button type="submit"> Search </button>
+          </div>
+          <div class=" col-sm-3 visible-sm" style="margin-left:305px;">
             <button type="submit"> Search </button>
           </div>
         </form>

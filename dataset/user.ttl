@@ -1,46 +1,51 @@
-@prefix user:<http://example.co.id/ns/userdata>
-@prefix d:<http://example.co.id/ns/data#>
+@prefix user:<http://example.co.id/ns/userdata> .
+@prefix d:<http://example.co.id/ns/data#> .
 
 d:f0301 user:name "Risyad Pangestu";
         user:nickname "Risyad";
         user:instagram "risyadpangestuu";
         user:twitter "risyaddp";
         user:facebook "Risyad Pangeran";
-        user:linkedIn "Risyad Pangestu".
+        user:linkedin "Risyad Pangestu".
 
 d:f0302 user:name "Dimas Satria";
         user:nickname "Tole";
         user:instagram "24Dim";
         user:twitter "24dimdim";
         user:facebook "irdimz";
-        user:linkedIn "Dimas Satria".
+        user:linkedin "Dimas Satria".
 
 d:f0303 user:name "M Luthfiansyah";
         user:nickname "Hyiung";
         user:instagram "luthfiansyh";
         user:twitter "luthfiansyh";
         user:facebook "M Luthfiansyah";
-        user:linkedIn "Muhammad Luthfiansyah".
+        user:linkedin "Muhammad Luthfiansyah".
 
 d:f0304 user:name "Imron Madani";
         user:nickname "Dani";
         user:instagram "danimron";
         user:twitter "danimron";
         user:facebook "ImronMadani";
-        user:linkedIn "Imron Madani".
+        user:linkedin "Imron Madani".
 
 d:f0201 user:name "Anglelica Rapunzela";
         user:nickname "Rapunzel";
         user:instagram "risyadpangestuu";
         user:twitter "risyaddp";
         user:facebook "Angle";
-        user:linkedIn "Rapunzela Angelica".
+        user:linkedin "Rapunzela Angelica".
+
+d:f0202 user:name "Bapak Aditya";
+        user:instagram "AdityaPradana";.
 
 # Users Instagram connection
 d:f0201 user:instagramfollow d:f0301.
 d:f0201 user:instagramfollow d:f0302.
 d:f0301 user:instagramfollow d:f0304.
 d:f0302 user:instagramfollow d:f0201.
+
+d:f0202 user:instagramfollow d:f0301.
 
 #Users twitter connection 
 d:f0303 user:twitterfollow d:f0304.
